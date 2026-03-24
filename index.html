@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Sitio académico de Visualización de Datos de Cristhian Iza"
+  />
+  <meta name="author" content="Cristhian Iza" />
+  <title>Visualización de Datos | Cristhian Iza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="logo">Cristhian Iza</a>
+
+      <button
+        class="nav-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        ☰
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <a href="#curso" class="nav__link">Curso</a>
+        <a href="#tareas" class="nav__link">Tareas</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="hero__eyebrow">Portafolio académico</p>
+        <h1 class="hero__title">Visualización de Datos</h1>
+        <p class="hero__subtitle">
+          Un espacio para presentar tareas, reflexiones y aprendizajes del curso
+          con una estructura clara, diseño elegante y enfoque profesional.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#tareas" class="btn btn--primary">Explorar tareas</a>
+          <a href="#contacto" class="btn btn--secondary">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="curso">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Curso</p>
+          <h2 class="section__title">Acerca del curso</h2>
+          <p class="section__description">
+            Este sitio reúne actividades y reflexiones sobre principios,
+            técnicas y buenas prácticas en visualización de datos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tareas">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Contenido</p>
+          <h2 class="section__title">Tareas y reflexiones</h2>
+          <p class="section__description">
+            Cada entrega resume conceptos esenciales del curso con un enfoque
+            claro, sintético y orientado a la comunicación visual efectiva.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card__tag">Tarea 1</span>
+            <h3 class="card__title">Introducción a la Visualización</h3>
+            <p class="card__text">
+              La visualización de datos transforma información compleja en
+              representaciones comprensibles que facilitan el análisis y la toma
+              de decisiones.
+            </p>
+            <a href="#" class="card__link">Leer más</a>
+          </article>
+
+          <article class="card">
+            <span class="card__tag">Tarea 2</span>
+            <h3 class="card__title">Tipos de Gráficos</h3>
+            <p class="card__text">
+              La elección de gráficos de barras, líneas, dispersión o mapas
+              depende del tipo de dato y del mensaje que se busca comunicar.
+            </p>
+            <a href="#" class="card__link">Leer más</a>
+          </article>
+
+          <article class="card">
+            <span class="card__tag">Tarea 3</span>
+            <h3 class="card__title">Buenas Prácticas</h3>
+            <p class="card__text">
+              Una visualización efectiva debe evitar la saturación, mantener
+              consistencia visual y destacar la información relevante.
+            </p>
+            <a href="#" class="card__link">Leer más</a>
+          </article>
+        </div>
+
+        <div class="cta">
+          <div>
+            <h3 class="cta__title">Más actividades del curso</h3>
+            <p class="cta__text">
+              Explora nuevas tareas, análisis y contenidos complementarios sobre
+              comunicación visual y representación de datos.
+            </p>
+          </div>
+          <a href="#" class="btn btn--primary">Ver más tareas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Contacto</p>
+          <h2 class="section__title">Información de contacto</h2>
+          <p class="section__description">
+            Puedes personalizar esta sección con correo electrónico, redes
+            profesionales o un formulario.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> Cristhian Iza</p>
+      <p>Curso de Visualización de Datos</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
