@@ -58,14 +58,15 @@
           <section class="content-block">
             <h2>1. Introducción</h2>
             <p>
-              La visualización de datos es una disciplina que permite transformar
-              datos en gráficos, diagramas y representaciones visuales capaces
-              de facilitar la comprensión de patrones, tendencias y relaciones.
+              En esta PEC 2 el objetivo es explorar tres técnicas de visualización de datos, 
+              haciendo énfasis en su adecuación según el tipo de información y 
+              el objetivo comunicativo. En esta actividad se propone un enfoque
+              inverso, partiendo de la técnica para identificar qué tipos de datos
+              se adaptan mejor a cada representación.
             </p>
             <p>
-              Su importancia radica en que convierte información compleja en un
-              lenguaje visual más intuitivo, ayudando a comunicar resultados de
-              forma efectiva tanto en entornos académicos como profesionales.
+              Se seleccionaron datos abiertos adecuados y se crearon
+              tres visualizaciones reales publicadas en este post
             </p>
           </section>
 
@@ -74,87 +75,127 @@
             <p>
               Una buena visualización no consiste únicamente en “hacer gráficos”,
               sino en seleccionar la representación adecuada según el tipo de
-              dato y el mensaje que se desea transmitir. Por ejemplo, los
-              gráficos de barras son útiles para comparar categorías, mientras
-              que los gráficos de líneas permiten observar cambios a lo largo del
-              tiempo.
+              dato y el mensaje que se desea transmitir. Además, es importante considerar
+              aspectos como la claridad visual, el uso adecuado del color, la jerarquía
+              de la información y la eliminación de elementos innecesarios que puedan distraer al lector. 
             </p>
             <p>
-              Además, es importante considerar aspectos como la claridad visual,
-              el uso adecuado del color, la jerarquía de la información y la
-              eliminación de elementos innecesarios que puedan distraer al lector.
+              
+            En este sección se analizan las tres técnicas de visualización:
             </p>
           </section>
 
           <section class="content-block">
-            <h2>3. Figura de ejemplo</h2>
+            <h2>1. Word Cloud</h2>
 
             <figure class="figure">
               <img
                 src="../assets/img/tarea1-figura1.png"
-                alt="Ejemplo de visualización de datos con gráfico de barras"
+                alt="Ejemplo de visualización de datos usando Word Cloud"
                 class="figure__image"
               />
               <figcaption class="figure__caption">
-                Figura 1. Ejemplo de gráfico utilizado para representar datos categóricos.
+                Figura 1. Ejemplo de gráfico Word Cloud.
               </figcaption>
             </figure>
 
             <p>
-              La figura anterior muestra un ejemplo de representación visual que
-              permite identificar comparaciones entre categorías de manera
-              rápida. Este tipo de gráficos es especialmente útil cuando se busca
-              resaltar diferencias entre valores discretos.
+              La nube de palabras (word cloud) es una forma sencilla y visual
+              de mostrar qué palabras aparecen con más frecuencia en un texto. 
+              Cuanto más grande sale una palabra, más veces se repite. En este caso,
+              la he aplicado a los títulos de Netflix, usando la columna de géneros
+              para ver qué tipos de contenido son los más comunes en la plataforma.
+            </p>
+            <p>
+              Esta técnica funciona muy bien cuando quieres tener una visión rápida
+              y general de los temas o categorías más importantes en un conjunto de texto.
+              Lo bueno es que es muy intuitiva y atractiva a la vista: en un solo vistazo 
+              puedes ver qué es lo que más pesa. Lo malo es que no permite comparar 
+              frecuencias con precisión y las palabras se colocan de forma aleatoria, sin
+              ningún orden lógico.
             </p>
           </section>
 
           <section class="content-block">
-            <h2>4. Análisis</h2>
-            <p>
-              El valor de una visualización depende de su capacidad para
-              comunicar información con precisión. Una visualización bien
-              diseñada ayuda al usuario a identificar hallazgos importantes sin
-              necesidad de leer grandes volúmenes de texto.
-            </p>
-            <p>
-              En este sentido, la visualización de datos no solo cumple una
-              función estética, sino también analítica y comunicativa. Por ello,
-              debe diseñarse con criterios de simplicidad, coherencia y enfoque
-              en la audiencia.
-            </p>
-          </section>
-
-          <section class="content-block">
-            <h2>5. Segunda figura</h2>
+            <h2>2. Icon Chart (Pictogram Chart)</h2>
 
             <figure class="figure">
               <img
                 src="../assets/img/tarea1-figura2.png"
-                alt="Ejemplo de gráfico lineal para mostrar evolución temporal"
+                alt="Ejemplo de visualización de datos usando Icon Chart"
                 class="figure__image"
               />
               <figcaption class="figure__caption">
-                Figura 2. Representación de una tendencia temporal mediante gráfico lineal.
+                Figura 2. Ejemplo de gráfico Icon Chart.
               </figcaption>
             </figure>
 
             <p>
-              Este segundo ejemplo permite observar cómo las visualizaciones
-              pueden ayudar a identificar tendencias, comportamientos y cambios
-              en series de tiempo.
+              El Icon Chart (o pictograma) es una técnica de visualización que
+              usa iconos repetidos para representar datos. Cada icono equivale
+              a una unidad (en este caso, un país), lo que hace que la información
+              sea muy fácil de entender a simple vista.
             </p>
+
+            <p>
+              En esta actividad la he aplicado al World Happiness Report 2025. He
+              agrupado los países en tres categorías según su nivel de felicidad:
+              alto, medio y bajo. Cada icono representa un país, y con diferentes
+              colores y emojis se distingue claramente a qué grupo pertenece.
+              Lo mejor de esta técnica es que es muy comunicativa y accesible.
+              Cualquiera puede entenderla rápidamente, incluso sin tener experiencia en datos.
+              Lo malo es que no es precisa: es difícil comparar valores exactos 
+              o hacer un análisis detallado con ella.
+            </p>
+          </section>
+<section class="content-block">
+            <h2>3. Violin Plot</h2>
+
+            <figure class="figure">
+              <img
+                src="../assets/img/tarea1-figura1.png"
+                alt="Ejemplo de visualización de datos usando Violin Plot"
+                class="figure__image"
+              />
+              <figcaption class="figure__caption">
+                Figura 3. Ejemplo de gráfico Violin Plot.
+              </figcaption>
+            </figure>
+
+            <p>
+              El violin plot es una técnica de visualización que muestra cómo se distribuye 
+              una variable numérica continua. Combina la forma de un diagrama de densidad
+              (que indica dónde se concentran más los valores) con elementos típicos del 
+              boxplot, como la mediana y los cuartiles.
+            </p>
+            <p>
+              En este caso, lo he aplicado al indicador “Ladder score” del World Happiness
+              Report 2025 para analizar cómo se distribuyen los niveles de felicidad entre
+              los países del mundo. La visualización combina un violin plot con un boxplot
+              superpuesto y puntos individuales, lo que permite ver al mismo tiempo la forma
+              general de la distribución, los valores centrales y cómo se dispersan los datos.
+            </p>
+            <p>
+              Este gráfico es ideal cuando se trabaja con datos numéricos continuos y quieres
+              entender bien la forma de la distribución, dónde se agrupan la mayoría de los países
+              y si hay valores extremos (outliers). Lo mejor es que ofrece una visión bastante 
+              completa y rica de los datos. Lo malo es que puede resultar un poco complicado de 
+              interpretar para quien no está familiarizado con estadística, porque la parte de
+              la “densidad” no es tan intuitiva a primera vista.
+            </p>  
           </section>
 
+
+          
+
           <section class="content-block">
-            <h2>6. Conclusión</h2>
+            <h2>4. Conclusión</h2>
             <p>
-              En conclusión, la visualización de datos es una herramienta
-              esencial para interpretar y comunicar información de forma
-              efectiva. Su correcta aplicación permite convertir datos en
-              conocimiento útil, favoreciendo el análisis y la toma de
-              decisiones fundamentadas.
-            </p>
-          </section>
+              En esta actividad permite elegir la técnica de visualización adecuada según los datos
+              y el mensaje que deseamos transmitir. Cada una tiene sus fortalezas: el icon chart es ideal
+              para mostrar proporciones de forma clara e intuitiva, el violin plot permite ver en profundidad
+              la distribución de los datos aunque es más complejo, y la word cloud ayuda a identificar
+              rápidamente los términos más frecuentes en textos.
         </article>
 
         <aside class="task-sidebar">
